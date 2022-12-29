@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/1K-wall_stone_12-diffuse.jpg" type="Texture" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.210891, 0.189981, 0.246281 )
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 2, 1, 2 )
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 100, 0, 0, 0, 50, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+transform = Transform( 0.203929, 0, 0, 0, 0.190306, 0, 0, 0, 0.256824, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.90848 )
+visible = false
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+visible = false

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Characters/Player.gd" type="Script" id=1]
+[ext_resource path="res://Characters/KinematicBody.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.247046
+height = 0.643205
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="KinematicBody" type="KinematicBody" parent="."]
+transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 6.66811, -2.33912 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+transform = Transform( 3.58584, 0, 0, 0, 3.28115, 0, 0, 0, 2.03382, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="KinematicBody"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.237, 0.5, 0 )
+current = true
+fov = 54.5
+near = 0.78
+far = 493.5
+
+[node name="OmniLight" type="OmniLight" parent="KinematicBody"]
+transform = Transform( 1.05035, 0, 0, 0, 0.525173, 0, 0, 0, 1, -1.2171, 2.04173, -1.78711 )
+omni_range = 25.309
