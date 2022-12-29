@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Characters/Skeleton-textures/830f64d9-150b-4205-9d43-7eb5026dab2b.png" type="Texture" id=1]
+[ext_resource path="res://Characters/Skeleton-textures/8215bd20-31c7-4a77-913e-c9a47d9ba04a.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Skeleton-textures/cb2f45fd-dda4-4e8a-b1c5-f82787adca8c.png" type="Texture" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+height = 7.38529
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "walk",
+"speed": 3.0
+} ]
+
+[node name="Skeleton" type="KinematicBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 4.8, 0 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 6.15829, 0, 0, 0, 11.1244, 0, 0, 0, 1, 0, 4.8, 0 )
+billboard = 1
+frames = SubResource( 2 )
+animation = "walk"
+frame = 3
+playing = true
+
+[node name="RayCast" type="RayCast" parent="."]
+cast_to = Vector3( 0, 0, 20 )

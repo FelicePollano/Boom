@@ -190,3 +190,6 @@ autoplay = true
 
 [node name="Pillar11" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47178, 18.376, -29.7454 )
+
+[node name="EnemySkeleton" type="Position3D" parent="."]
+transform = Transform( 0.743064, 0, 0, 0, 1, 0, 0, 0, 0.743064, 19.0937, 0, 11.1417 )
