@@ -10,13 +10,15 @@ extents = Vector3( 0.210891, 0.189981, 0.246281 )
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = ExtResource( 1 )
+metallic = 0.79
+metallic_specular = 0.0
 normal_enabled = true
 normal_scale = 1.0
 normal_texture = ExtResource( 2 )
 uv1_scale = Vector3( 2, 1, 0.01 )
 
-[node name="Spatial" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0 )
+[node name="w" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 100, 0, 0, 0, 50, 0, 0, 0, 1.7819, 0, 0, 0 )

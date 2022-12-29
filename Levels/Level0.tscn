@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Textures/DiamondPlate006C_1K_Color.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level0.gd" type="Script" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Textures/DiamondPlate006C_1K_Metalness.jpg" type="Texture" id=6]
 [ext_resource path="res://icon.png" type="Texture" id=7]
 [ext_resource path="res://Tools/Wall.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Tools/Pillar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=10]
 
 [sub_resource type="PhysicsMaterial" id=9]
 rough = true
@@ -47,6 +49,16 @@ uv1_scale = Vector3( 3, 3, 3 )
 
 [sub_resource type="SphereShape" id=5]
 
+[sub_resource type="PanoramaSky" id=12]
+panorama = ExtResource( 10 )
+
+[sub_resource type="Environment" id=11]
+background_mode = 2
+background_sky = SubResource( 12 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 1.57
+ambient_light_sky_contribution = 0.1
+
 [node name="Level0" type="Spatial"]
 script = ExtResource( 2 )
 
@@ -61,10 +73,6 @@ material/0 = SubResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Floor"]
 shape = SubResource( 10 )
-
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.0528937, 0.9986, 0, -0.9986, 0.0528937, 0, 14.8718, 0 )
-shadow_enabled = true
 
 [node name="RigidBody" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51.2248, 18.3946, 22.2457 )
@@ -94,26 +102,20 @@ transform = Transform( -4.37114e-08, 0, -0.828081, 0, 1, 0, 1, 0, -3.61966e-08, 
 [node name="w4" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4801, 8.732, -60.293 )
 
-[node name="DirectionalLight2" type="DirectionalLight" parent="."]
-transform = Transform( 0.781962, -0.592018, -0.195063, -0.587243, -0.804622, 0.0879155, -0.208999, 0.0458025, -0.976843, -61.8235, 50.66, -11.3141 )
-
 [node name="w5" parent="." instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.12, 9, -10.102 )
-
-[node name="DirectionalLight3" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 35.1546, 0 )
 
 [node name="w6" parent="." instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.1122, 9, 29.4203 )
 
 [node name="w7" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.50425, 48.875 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 48.875 )
 
 [node name="w8" parent="." instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20.3961, 9, 42.2453 )
 
 [node name="w9" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7955, 9.00718, 21.4787 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7955, 9, 21.4787 )
 
 [node name="w10" parent="." instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 61.59, 9, 41.6965 )
@@ -134,10 +136,49 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.686, 9, -19.4936 )
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 79.8952, 9, -39.6521 )
 
 [node name="w16" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.372, 9.5, -60.2929 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.372, 9, -60.2929 )
 
 [node name="w17" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1339, 9.5, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1339, 9, 0 )
 
-[node name="Spatial" parent="." instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.52781, 9.5, -49.4609 )
+[node name="w18" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.52781, 9, -49.4609 )
+
+[node name="Pillar1" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4536, 18, 13.1901 )
+
+[node name="Pillar2" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0818, 18.3763, -0.050638 )
+
+[node name="Pillar3" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3802, 18.3763, -29.6697 )
+
+[node name="Pillar5" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 18.376, -0.051 )
+
+[node name="Pillar4" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 61.9515, 18.3763, 6.73793 )
+
+[node name="Pillar6" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.1311, 18.3763, -35.649 )
+
+[node name="Pillar7" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 18.3763, -19 )
+
+[node name="Pillar" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42.2992, 18.3763, -59.5184 )
+
+[node name="Pillar8" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 102, 18.3763, 21 )
+
+[node name="Pillar9" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8616, 18.3763, 21.644 )
+
+[node name="Pillar10" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 61.6218, 18.3763, 21.3894 )
+
+[node name="PlayerPosition" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 8 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 11 )

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.s3tc.stex"
-path.etc2="res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.etc2.stex"
+path.s3tc="res://.import/Metal022_1K_Color.jpg-365820e2b2d914f182af9e984355181e.s3tc.stex"
+path.etc2="res://.import/Metal022_1K_Color.jpg-365820e2b2d914f182af9e984355181e.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/1K-wall_stone_12-specular.jpg"
-dest_files=[ "res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.s3tc.stex", "res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.etc2.stex" ]
+source_file="res://Textures/Metal022_1K_Color.jpg"
+dest_files=[ "res://.import/Metal022_1K_Color.jpg-365820e2b2d914f182af9e984355181e.s3tc.stex", "res://.import/Metal022_1K_Color.jpg-365820e2b2d914f182af9e984355181e.etc2.stex" ]
 
 [params]
 
@@ -25,7 +25,7 @@ flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

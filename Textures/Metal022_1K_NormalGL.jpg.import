@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.s3tc.stex"
-path.etc2="res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.etc2.stex"
+path.s3tc="res://.import/Metal022_1K_NormalGL.jpg-7d9a90102c99e9cde03350c54cf8c2d1.s3tc.stex"
+path.etc2="res://.import/Metal022_1K_NormalGL.jpg-7d9a90102c99e9cde03350c54cf8c2d1.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/1K-wall_stone_12-specular.jpg"
-dest_files=[ "res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.s3tc.stex", "res://.import/1K-wall_stone_12-specular.jpg-f000652fd6d000bfc247da023c0c5017.etc2.stex" ]
+source_file="res://Textures/Metal022_1K_NormalGL.jpg"
+dest_files=[ "res://.import/Metal022_1K_NormalGL.jpg-7d9a90102c99e9cde03350c54cf8c2d1.s3tc.stex", "res://.import/Metal022_1K_NormalGL.jpg-7d9a90102c99e9cde03350c54cf8c2d1.etc2.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=0
+compress/normal_map=1
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
