@@ -1,15 +1,15 @@
 extends KinematicBody
 
-
+var ak47 = preload("res://Weapons/Ak47/Ak47.tscn")
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
 var speed = 20
-var ang_speed =1
+var ang_speed =2
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	add_child(ak47.instance())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
