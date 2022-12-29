@@ -83,52 +83,61 @@ transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
 shape = SubResource( 5 )
 
 [node name="w1" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.353155, 8.92722, -29.6255 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.353155, 9, -29.6255 )
 
 [node name="w2" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41.1799, 8.92143, -29.7072 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41.18, 9, -29.625 )
 
 [node name="w3" parent="." instance=ExtResource( 8 )]
-transform = Transform( -0.00169293, 0, -0.82808, 0, 1, 0, 0.999999, 0, -0.00140189, 61.1126, 8.91226, -15.4231 )
+transform = Transform( -4.37114e-08, 0, -0.828081, 0, 1, 0, 1, 0, -3.61966e-08, 62.1126, 9, -14.4231 )
 
 [node name="w4" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41.1559, 8.73237, 6.64181 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4801, 8.732, -60.293 )
 
 [node name="DirectionalLight2" type="DirectionalLight" parent="."]
 transform = Transform( 0.781962, -0.592018, -0.195063, -0.587243, -0.804622, 0.0879155, -0.208999, 0.0458025, -0.976843, -61.8235, 50.66, -11.3141 )
 
 [node name="w5" parent="." instance=ExtResource( 8 )]
-transform = Transform( 0.00338599, 0, -0.999994, 0, 1, 0, 0.999994, 0, 0.00338599, -20.2038, 8.88966, -10.1019 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.12, 9, -10.102 )
 
 [node name="DirectionalLight3" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 35.1546, 0 )
 
 [node name="w6" parent="." instance=ExtResource( 8 )]
-transform = Transform( 0.00668457, 0, -0.999978, 0, 1, 0, 0.999978, 0, 0.00668457, -20.1122, 8.88966, 29.4203 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.1122, 9, 29.4203 )
 
 [node name="w7" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.50425, 50.4913 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.50425, 48.875 )
 
 [node name="w8" parent="." instance=ExtResource( 8 )]
-transform = Transform( -0.0100878, 0, -0.999949, 0, 1, 0, 0.999949, 0, -0.0100878, 20.3961, 9.35361, 42.2453 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20.3961, 9, 42.2453 )
 
 [node name="w9" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.1164, 9.00718, 21.4787 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.7955, 9.00718, 21.4787 )
 
 [node name="w10" parent="." instance=ExtResource( 8 )]
-transform = Transform( -0.000174566, 0, -1, 0, 1, 0, 1, 0, -0.000174566, 60.9717, 9.00718, 41.6965 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 61.59, 9, 41.6965 )
 
 [node name="w11" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 80.8152, 8.88967, 61.0155 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 80.8152, 9, 61.0155 )
 
 [node name="w12" parent="." instance=ExtResource( 8 )]
-transform = Transform( 0.00544534, 0, 0.999985, 0, 1, 0, -0.999985, 0, 0.00544534, 101.827, 8.88967, 40.6013 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 102.02, 9, 40.601 )
 
 [node name="w13" parent="." instance=ExtResource( 8 )]
-transform = Transform( 0.00619594, 0, 0.999981, 0, 1, 0, -0.999981, 0, 0.00619594, 102.02, 9.42155, -0.471322 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 102.02, 9, 0.528678 )
 
 [node name="w14" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.686, 9.20725, -20.4936 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.686, 9, -19.4936 )
+
+[node name="w15" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 79.8952, 9, -39.6521 )
+
+[node name="w16" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.372, 9.5, -60.2929 )
+
+[node name="w17" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1339, 9.5, 0 )
 
 [node name="Spatial" parent="." instance=ExtResource( 8 )]
-transform = Transform( 0.0225827, 0, -0.999745, 0, 1, 0, 0.999745, 0, 0.0225827, 80.7862, 9.20725, -41.5811 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.52781, 9.5, -49.4609 )
