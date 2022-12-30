@@ -1,0 +1,71 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Characters/Skeleton-textures/830f64d9-150b-4205-9d43-7eb5026dab2b.png" type="Texture" id=1]
+[ext_resource path="res://Characters/Skeleton-textures/8215bd20-31c7-4a77-913e-c9a47d9ba04a.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Skeleton-textures/cb2f45fd-dda4-4e8a-b1c5-f82787adca8c.png" type="Texture" id=3]
+[ext_resource path="res://Characters/Skeleton.gd" type="Script" id=4]
+[ext_resource path="res://Characters/Skeleton-textures/97e5c262-92dd-474f-bb9d-fa01325ff6b5.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Skeleton-textures/86c20ec2-6a41-427e-b3ed-ccd3dcf47cfe.png" type="Texture" id=6]
+[ext_resource path="res://Characters/Skeleton-textures/ebeb28be-b387-4058-a180-b1c95a6140c8.png" type="Texture" id=7]
+[ext_resource path="res://Characters/Skeleton-textures/403ce639-fd6c-4120-9b11-d8db23a8a3a9.png" type="Texture" id=8]
+[ext_resource path="res://Characters/Skeleton-textures/fa9ab593-2c36-41c2-87fd-74da73bf2cb9.png" type="Texture" id=9]
+[ext_resource path="res://Characters/Sounds/567892__merrick079__scream.wav" type="AudioStream" id=10]
+[ext_resource path="res://Characters/Skeleton-textures/6ba778c8-3350-4f33-b8d1-7267c26f1376.png" type="Texture" id=11]
+[ext_resource path="res://Characters/Skeleton-textures/deab767e-3d78-4a57-a0b4-48a1bee9b31d.png" type="Texture" id=12]
+[ext_resource path="res://Characters/Skeleton-textures/aede31c4-72be-4203-ad01-8876f034b932.png" type="Texture" id=13]
+[ext_resource path="res://Characters/Skeleton-textures/d73d87b2-7137-4851-9cba-a4acfbfcd8a8.png" type="Texture" id=14]
+[ext_resource path="res://Characters/Skeleton-textures/74a258e1-30e8-45ae-ab08-df5d359e9ee2.png" type="Texture" id=15]
+[ext_resource path="res://Characters/Sounds/491443__music15tree__roar.wav" type="AudioStream" id=16]
+
+[sub_resource type="CapsuleShape" id=1]
+height = 7.38529
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Fire",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "walk",
+"speed": 3.0
+} ]
+
+[node name="Skeleton" type="KinematicBody" groups=["Enemy"]]
+script = ExtResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.405621, 1.97744, 1.56904 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 6.15829, 0, 0, 0, 11.1244, 0, 0, 0, 1, 0, 2.94378, 0 )
+centered = false
+offset = Vector2( -28, -50 )
+billboard = 1
+frames = SubResource( 2 )
+animation = "walk"
+frame = 1
+playing = true
+
+[node name="RayCast" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.27607, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, 100 )
+debug_shape_custom_color = Color( 0.729412, 0.129412, 0.129412, 1 )
+
+[node name="NavigationAgent" type="NavigationAgent" parent="."]
+path_max_distance = 1.2
+
+[node name="Scream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Fire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
