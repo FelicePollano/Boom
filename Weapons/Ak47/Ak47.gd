@@ -2,7 +2,7 @@ extends Spatial
 
 onready var sprite = $CanvasLayer/Control/WeaponAnim
 onready var shot = $ShotNoise
-
+signal fire;
 var flash = preload("res://Weapons/Flash.tscn")
 # Declare member variables here. Examples:
 # var a: int = 2
@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 		add_child(flash.instance())
 		shot.play()
 		can_fire = false;
+		emit_signal("fire")
 	yield(sprite,"animation_finished") 
 	sprite.play("Idle")
 	yield(sprite,"animation_finished")

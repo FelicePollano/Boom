@@ -208,3 +208,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 94.8999, 0, 51.9385 )
 
 [node name="EnemySkeleton2" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92.3351, -61.4582, -1.92361 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 40.195
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

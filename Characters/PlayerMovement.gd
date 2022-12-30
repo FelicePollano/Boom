@@ -1,15 +1,21 @@
 extends KinematicBody
 
 var ak47 = preload("res://Weapons/Ak47/Ak47.tscn")
+var flash = preload("res://Weapons/Flash.tscn")
+onready var ouch : AudioStreamPlayer = $Ouch
+onready var raycast =$RayCast
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
 var speed = 20
-var ang_speed =2
+var ang_speed =1.2
+var health=100
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	add_child(ak47.instance())
+	var weapon = ak47.instance()
+	add_child(weapon)
+	weapon.connect("fire",self,"on_fire")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,4 +30,19 @@ func _process(delta: float) -> void:
 		rotate_y(ang_speed*delta)
 	if Input.is_key_pressed(KEY_D):
 		rotate_y(-ang_speed*delta)
+	pass
+
+	
+func on_fire()->void:
+	if raycast.is_colliding():
+		var hit = raycast.get_collider()
+		if hit.is_in_group("Enemy"):
+			hit.damage(1)
+	
+func damage(amount)->void:
+	health-=amount
+	var f=flash.instance()
+	f.color=Color.darkred
+	add_child(f)
+	ouch.play()
 	pass
