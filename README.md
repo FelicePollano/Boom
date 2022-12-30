@@ -11,10 +11,10 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 
 
 ## Credits
-[Realm667](https://www.realm667.com/en/) For monsters and AK47 animations.
-[FreeSound](https://freesound.org/people/The%20Baron/sounds/98399/) for sound effects ( excluded music that is mine ).
-[Online Javascript wad extractor](https://jmickle66666666.github.io/wad-js/) great online WAD extractor.
-[ambientCG](https://ambientcg.com/) for material textures.
+- [Realm667](https://www.realm667.com/en/) For monsters and AK47 animations.
+- [FreeSound](https://freesound.org/people/The%20Baron/sounds/98399/) for sound effects ( excluded music that is mine ).
+- [Online Javascript wad extractor](https://jmickle66666666.github.io/wad-js/) great online WAD extractor.
+- [ambientCG](https://ambientcg.com/) for material textures.
 
 
 
