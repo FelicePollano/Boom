@@ -8,7 +8,7 @@ onready var fire_sound : AudioStreamPlayer = $Fire
 onready var raycast : RayCast =$ RayCast
 var speed = 3
 var health=3
-var fire_distance=45
+var fire_distance=900
 var firing=false
 
 func damage(how_much)->void:
@@ -35,8 +35,8 @@ func _physics_process(delta: float) -> void:
 	# always cast fire in player direction
 	$RayCast.cast_to=(player.transform.origin-transform.origin).normalized()*100
 	$RayCast.cast_to.y=3.0 #adjust height
-	
-	if (agent.get_target_location() - transform.origin).length_squared() < fire_distance && !firing:
+	#print( "distance:%s"%(player.transform.origin - transform.origin).length_squared() )
+	if (player.transform.origin - transform.origin).length_squared() < fire_distance && !firing:
 		firing=true
 		fire()
 	
@@ -63,8 +63,8 @@ func fire()->void:
 	if health>0:
 		speed=save
 		sprite.play("walk")
-		yield(get_tree().create_timer(2.0), "timeout")
-	firing=false
+		yield(get_tree().create_timer(1), "timeout")
+		firing=false
 	
 
 

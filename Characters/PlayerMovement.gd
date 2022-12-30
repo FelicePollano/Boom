@@ -45,4 +45,10 @@ func damage(amount)->void:
 	f.color=Color.darkred
 	add_child(f)
 	ouch.play()
+	if health<=0:
+		$CollisionShape.disabled=true
+		set_physics_process(false)
+		set_process(false)
+		transform.origin.y-=5
+		$Die.play()
 	pass

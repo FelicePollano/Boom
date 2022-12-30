@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Characters/Sounds/163441__under7dude__man-getting-hit.wav" type="AudioStream" id=1]
 [ext_resource path="res://Characters/PlayerMovement.gd" type="Script" id=2]
+[ext_resource path="res://Characters/Sounds/98399__the-baron__argh.wav" type="AudioStream" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.309514
@@ -37,3 +38,6 @@ debug_shape_thickness = 5
 [node name="Ouch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 volume_db = 8.0
+
+[node name="Die" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
