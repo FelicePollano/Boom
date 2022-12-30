@@ -7,7 +7,7 @@ onready var scream : AudioStreamPlayer = $Scream
 onready var fire_sound : AudioStreamPlayer = $Fire
 onready var raycast : RayCast =$ RayCast
 var speed = 3
-var health=3
+var health=2
 var fire_distance=900
 var firing=false
 
@@ -59,7 +59,7 @@ func fire()->void:
 	if raycast.is_colliding():
 		var hit = raycast.get_collider()
 		if hit.is_in_group("Player"):
-			hit.damage(10)
+			hit.damage(5)
 	if health>0:
 		speed=save
 		sprite.play("walk")
