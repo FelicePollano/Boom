@@ -52,15 +52,24 @@ margin_left = 10.0
 margin_top = -71.0
 margin_right = 205.0
 
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+margin_left = -3.0
+margin_top = -1.0
+margin_right = 109.0
+margin_bottom = 35.0
+color = Color( 0.27451, 0.254902, 0.254902, 1 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/ColorRect"]
+margin_top = 8.0
+margin_right = 71.0
+margin_bottom = 31.0
 theme = ExtResource( 4 )
 text = "HEALTH: "
 
-[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+[node name="Label2" type="Label" parent="CanvasLayer/Control/ColorRect"]
 margin_left = 74.0
+margin_top = 8.0
 margin_right = 114.0
-margin_bottom = 23.0
+margin_bottom = 31.0
 theme = ExtResource( 4 )
 text = "100"

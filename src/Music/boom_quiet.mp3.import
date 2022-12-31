@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boom_quiet.mp3-fc548b30d0f1d6c94113363b6702a869.mp3str"
+
+[deps]
+
+source_file="res://Music/boom_quiet.mp3"
+dest_files=[ "res://.import/boom_quiet.mp3-fc548b30d0f1d6c94113363b6702a869.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
