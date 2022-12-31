@@ -214,6 +214,6 @@ wait_time = 40.195
 autostart = true
 
 [node name="TeleporterPosition" type="Position3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4343, 0, 11.6884 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4343, 0, -38.535 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
