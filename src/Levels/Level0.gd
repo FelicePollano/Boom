@@ -28,8 +28,9 @@ func _process(delta: float) -> void:
 	if victory and not teleporter_spawned and (player_instance.transform.origin-teleporter_position.transform.origin).length_squared()>2000:
 		teleporter_spawned=true
 		spawn_teleporter()
-
+		
 func spawn_teleporter()->void:
 	var t = teleporter.instance()
 	t.transform.origin=teleporter_position.transform.origin
+	t.dest_scene="res://Levels/Level1.tscn"
 	add_child(t)
