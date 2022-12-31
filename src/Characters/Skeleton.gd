@@ -23,7 +23,6 @@ func damage(how_much)->void:
 		
 		
 	
-var rng = RandomNumberGenerator.new()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	agent.set_target_location(player.transform.origin)
@@ -32,9 +31,11 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var next = agent.get_next_location()
 	var direction = (next - transform.origin).normalized()
-	# always cast fire in player direction
-	$RayCast.cast_to=(player.transform.origin-transform.origin).normalized()*100
-	$RayCast.cast_to.y=3.0 #adjust height
+	# always cast fire in player direction, unless already in fire
+	# so player can avoid being hitten by moving away from fire ray
+	if not firing:
+		$RayCast.cast_to=(player.transform.origin-transform.origin).normalized()*100
+		$RayCast.cast_to.y=3.0 #adjust height
 	#print( "distance:%s"%(player.transform.origin - transform.origin).length_squared() )
 	if (player.transform.origin - transform.origin).length_squared() < fire_distance && !firing:
 		firing=true
