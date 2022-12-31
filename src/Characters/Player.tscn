@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Characters/Sounds/163441__under7dude__man-getting-hit.wav" type="AudioStream" id=1]
 [ext_resource path="res://Characters/PlayerMovement.gd" type="Script" id=2]
 [ext_resource path="res://Characters/Sounds/98399__the-baron__argh.wav" type="AudioStream" id=3]
+[ext_resource path="res://Characters/UITheme.tres" type="Theme" id=4]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.309514
@@ -41,3 +42,25 @@ volume_db = 8.0
 
 [node name="Die" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = -71.0
+margin_right = 205.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+margin_right = 40.0
+margin_bottom = 14.0
+theme = ExtResource( 4 )
+text = "HEALTH: "
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+margin_left = 74.0
+margin_right = 114.0
+margin_bottom = 23.0
+theme = ExtResource( 4 )
+text = "100"

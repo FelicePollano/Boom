@@ -15,6 +15,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 - [FreeSound](https://freesound.org/people/The%20Baron/sounds/98399/) for sound effects ( excluded music that is mine ).
 - [Online Javascript wad extractor](https://jmickle66666666.github.io/wad-js/) great online WAD extractor.
 - [ambientCG](https://ambientcg.com/) for material textures.
+- [FontSquirrel](https://www.fontsquirrel.com/) for font in user inerface.
 
 
 

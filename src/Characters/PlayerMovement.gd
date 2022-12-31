@@ -4,6 +4,7 @@ var ak47 = preload("res://Weapons/Ak47/Ak47.tscn")
 var flash = preload("res://Weapons/Flash.tscn")
 onready var ouch : AudioStreamPlayer = $Ouch
 onready var raycast =$RayCast
+onready var health_label : Label = $CanvasLayer/Control/Label2
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
@@ -41,6 +42,7 @@ func on_fire()->void:
 	
 func damage(amount)->void:
 	health-=amount
+	health_label.text = "%s"%health
 	var f=flash.instance()
 	f.color=Color.darkred
 	add_child(f)
