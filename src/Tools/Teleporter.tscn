@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.45098, 0.45098, 0.498039, 1 )
+metallic = 0.97
+metallic_specular = 0.0
+refraction_enabled = true
+refraction_scale = 1.0
+refraction_texture_channel = 0
+
+[sub_resource type="CylinderMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="CylinderMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_transparent = true
+albedo_color = Color( 0.137255, 0.686275, 0.415686, 0.490196 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+lifetime_randomness = 0.05
+emission_shape = 1
+emission_sphere_radius = 2.55
+spread = 53.91
+color = Color( 0.054902, 0.392157, 0.0901961, 1 )
+
+[sub_resource type="PointMesh" id=6]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.9105, 0 )
+light_color = Color( 0.0470588, 0.772549, 0.192157, 1 )
+light_energy = 5.257
+omni_range = 18.296
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 2.5, 0, 0, 0, 0.067, 0, 0, 0, 2.5, 0, 0.120079, 0 )
+mesh = SubResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 2.5, 0, 0, 0, 0.067, 0, 0, 0, 2.5, 0, 15.1778, 0 )
+mesh = SubResource( 2 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 2.3, 0, 0, 0, 7.50586, 0, 0, 0, 2.3, 0, 7.48453, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.1562, 0 )
+amount = 400
+lifetime = 15.39
+randomness = 0.13
+visibility_aabb = AABB( -4.06738, -5.50316, -1.85325, 8, 6.95749, 4.01411 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 6 )

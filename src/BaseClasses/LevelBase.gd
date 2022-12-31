@@ -3,7 +3,7 @@ extends Spatial
 class_name LevelBase
 var player = preload("res://Characters/Player.tscn")
 var skeleton = preload("res://Characters/Skeleton.tscn")
-
+var player_instance
 
 func _ready() -> void:
 	spawn_player() # Replace with function body.
@@ -28,6 +28,6 @@ func spawn_enemy(name:String)->KinematicBody:
 func _process(delta: float) -> void:
 	pass
 func spawn_player()->void:
-	var p = player.instance()
-	p.transform.origin = $PlayerPosition.transform.origin
-	add_child(p)
+	player_instance = player.instance()
+	player_instance.transform.origin = $PlayerPosition.transform.origin
+	add_child(player_instance)
