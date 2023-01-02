@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Tools/Tunnel.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Tools/SciFiWall.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Tools/T-Tunnel.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Tools/Door.tscn" type="PackedScene" id=9]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -176,6 +177,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -85.9229, 0, -130.991 )
 
 [node name="SciFiWall19" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
 transform = Transform( 0.848316, 0, -0.52949, 0, 1, 0, 0.52949, 0, 0.848316, -40.2267, 0, -118.808 )
+
+[node name="Door" parent="NavigationMeshInstance" instance=ExtResource( 9 )]
+transform = Transform( 0.999967, 0, -0.00813315, 0, 1, 0, 0.00813315, 0, 0.999967, 20.7444, 0, 88.6537 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
