@@ -7,6 +7,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 ![screen1](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-27-11.png)
 ![screen2](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-28-40.png)
 ![screen3](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-29-20.png)
+![screen4](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-02%10-24-45.png)
 
 
 

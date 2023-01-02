@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Textures/concrete_57_basecolor-1K.png" type="Texture" id=4]
 [ext_resource path="res://Music/boom_1.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Tools/Tunnel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Tools/SciFiWall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Tools/T-Tunnel.tscn" type="PackedScene" id=8]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -35,35 +37,149 @@ script = ExtResource( 2 )
 environment = SubResource( 11 )
 
 [node name="PlayerPosition" type="Position3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6324, 0, 8.6132 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0676, 0, 90.0476 )
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="."]
 navmesh = SubResource( 14 )
 
-[node name="StaticBody" type="StaticBody" parent="NavigationMeshInstance"]
+[node name="Tunnel" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -69.2247, 0, 88.4344 )
+
+[node name="Tunnel2" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.77094, 0, 88.4344 )
+
+[node name="SciFiPillar" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.1527, 0, 90.1179 )
+
+[node name="SciFiPillar2" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.1527, 0, 110.545 )
+
+[node name="SciFiWall" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, -105.598, 0, 133.831 )
+
+[node name="SciFiWall2" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -163.206, 0, 167.1 )
+
+[node name="SciFiWall3" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -201.512, 0, 121.779 )
+
+[node name="SciFiWall4" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, -202.387, 0, 77.9078 )
+
+[node name="SciFiWall5" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -207.534, 0, 56 )
+
+[node name="SciFiWall6" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -106.442, 0, 43.4196 )
+
+[node name="SciFiWall7" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -119.109, 0, 56 )
+
+[node name="floor" type="StaticBody" parent="NavigationMeshInstance"]
 transform = Transform( 50, 0, 0, 0, 0.0583726, 0, 0, 0, 50, 0, 0, 0 )
 
-[node name="MeshInstance" type="MeshInstance" parent="NavigationMeshInstance/StaticBody"]
+[node name="MeshInstance" type="MeshInstance" parent="NavigationMeshInstance/floor"]
 transform = Transform( 5.08054, 0, 0, 0, 0.999998, 0, 0, 0, 3.20442, -0.00509276, 48.89, 0 )
 mesh = SubResource( 13 )
 material/0 = SubResource( 3 )
 
-[node name="CollisionShape" type="CollisionShape" parent="NavigationMeshInstance/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="NavigationMeshInstance/floor"]
 transform = Transform( 0.999999, 0, 0, 0, 0.894178, 0, 0, 0, 0.999999, 0, -106.805, 0 )
 shape = SubResource( 1 )
+
+[node name="Tunnel3" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -162.869, 0, 13 )
+
+[node name="SciFiPillar3" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -175.368, 0, 57.229 )
+
+[node name="SciFiPillar4" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -151.178, 0, 57.229 )
+
+[node name="T-Tunnel" parent="NavigationMeshInstance" instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -162.869, 0, -50.0148 )
+
+[node name="SciFiPillar5" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -185.769, 0, -18.6 )
+
+[node name="SciFiPillar6" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -140.426, 0, -18.6 )
+
+[node name="Tunnel4" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -119.907, 0, -50.0148 )
+
+[node name="SciFiPillar7" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -164, 0, -38.5 )
+
+[node name="SciFiPillar8" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -164, 0, -62.67 )
+
+[node name="Tunnel5" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56.427, 0, -50.015 )
+
+[node name="SciFiWall8" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -37.537, 0, -93.314 )
+
+[node name="SciFiWall9" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -37.5369, 0, -5.31281 )
+
+[node name="SciFiWall10" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12973, 0, -73.9229 )
+
+[node name="T-Tunnel2" parent="NavigationMeshInstance" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9385, 0, 88.4878 )
+
+[node name="Tunnel6" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 51.2973, 0, 45.1865 )
+
+[node name="SciFiWall11" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.05338, 0, 25.4655 )
+
+[node name="Tunnel7" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 68.6101, 0, -50.0148 )
+
+[node name="SciFiWall12" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 26.2898, 0, -92.5182 )
+
+[node name="Tunnel8" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114.778, 0, 88.4878 )
+
+[node name="Tunnel9" parent="NavigationMeshInstance" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 131.449, 0, -50.0148 )
+
+[node name="T-Tunnel3" parent="NavigationMeshInstance" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 194.93, 0, -50.0148 )
+
+[node name="T-Tunnel4" parent="NavigationMeshInstance" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 176.976, 0, 88.4878 )
+
+[node name="SciFiWall13" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 215.449, 0, -31.6027 )
+
+[node name="SciFiWall14" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 215.448, 0, 31.8777 )
+
+[node name="SciFiWall15" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 196.853, 0, 108.182 )
+
+[node name="SciFiWall16" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 0.706465, 0, 0.707748, 0, 1, 0, -0.707748, 0, 0.706465, 240.456, 0, 62.656 )
+
+[node name="T-Tunnel5" parent="NavigationMeshInstance" instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -162.869, 0, -111.572 )
+
+[node name="SciFiWall17" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -150.044, 0, -130.991 )
+
+[node name="SciFiWall18" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -85.9229, 0, -130.991 )
+
+[node name="SciFiWall19" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( 0.848316, 0, -0.52949, 0, 1, 0, 0.52949, 0, 0.848316, -40.2267, 0, -118.808 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
 
-[node name="Tunnel" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -73.072, 0, 7 )
-
-[node name="Tunnel2" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61823, 0, 7 )
-
-[node name="SciFiPillar" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 8.68 )
-
-[node name="SciFiPillar2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 29.107 )
+[node name="SciFiWall" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 26.9311, 0, -4.95673 )
