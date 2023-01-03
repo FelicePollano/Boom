@@ -6,7 +6,7 @@
 [ext_resource path="res://Characters/UITheme.tres" type="Theme" id=4]
 
 [sub_resource type="CapsuleShape" id=1]
-radius = 0.309514
+radius = 0.415443
 height = 1.76548
 
 [node name="Player" type="KinematicBody" groups=["Player"]]
@@ -14,7 +14,7 @@ transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 29.3607
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 3.58584, 0, 0, 0, -1.43424e-07, -2.03382, 0, 3.28115, -8.89011e-08, 0, 2.19012, 0 )
+transform = Transform( 4.0827, 0, 0, 0, -1.63297e-07, -2.31563, 0, 3.28115, -8.89011e-08, 0, 2.19012, 0 )
 shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]

@@ -1,7 +1,7 @@
 [gd_resource type="SpatialMaterial" load_steps=4 format=2]
 
 [ext_resource path="res://Textures/Metal043B_1K-JPG/Metal043B_1K_NormalGL.jpg" type="Texture" id=1]
-[ext_resource path="res://Textures/Metal043B_1K-JPG/Metal043B_1K_Color.jpg" type="Texture" id=2]
+[ext_resource path="res://Textures/concrete_57_basecolor-1K.png" type="Texture" id=2]
 [ext_resource path="res://Textures/Metal043B_1K-JPG/Metal043B_1K_Metalness.jpg" type="Texture" id=3]
 
 [resource]
