@@ -1,11 +1,10 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Tools/Materials/Door-side.tres" type="Material" id=1]
 [ext_resource path="res://Tools/Materials/Door_Plate.tres" type="Material" id=2]
-[ext_resource path="res://Tools/Materials/dopor-red-led.tres" type="Material" id=3]
-[ext_resource path="res://Tools/Materials/door-green-led.tres" type="Material" id=4]
 [ext_resource path="res://Tools/Materials/Door-Gate.tres" type="Material" id=5]
 [ext_resource path="res://Tools/Door.gd" type="Script" id=6]
+[ext_resource path="res://Tools/Sounds/411110__kernschall__thin-metal-sliding-door-open-sqeaking.wav" type="AudioStream" id=7]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -16,8 +15,40 @@ data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1
 
 [sub_resource type="CubeMesh" id=7]
 
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.501961, 0.0470588, 0.0470588, 1 )
+metallic = 0.88
+metallic_specular = 0.54
+refraction_enabled = true
+refraction_scale = 0.38
+refraction_texture_channel = 0
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.0470588, 0.501961, 0.0666667, 1 )
+metallic = 0.88
+metallic_specular = 0.54
+refraction_enabled = true
+refraction_scale = 0.38
+refraction_texture_channel = 0
+
 [sub_resource type="BoxShape" id=10]
 extents = Vector3( 0.167887, 0.158345, 0.182961 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.501961, 0.0470588, 0.0470588, 1 )
+metallic = 0.88
+metallic_specular = 0.54
+refraction_enabled = true
+refraction_scale = 0.38
+refraction_texture_channel = 0
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.0470588, 0.501961, 0.0666667, 1 )
+metallic = 0.88
+metallic_specular = 0.54
+refraction_enabled = true
+refraction_scale = 0.38
+refraction_texture_channel = 0
 
 [sub_resource type="CubeMesh" id=8]
 
@@ -55,15 +86,15 @@ material/0 = ExtResource( 2 )
 [node name="RedLed" type="MeshInstance" parent="door-right/Plate1"]
 transform = Transform( 0.222444, 6.40632e-08, 2.84456e-15, -4.49131e-09, 0.555355, 5.91337e-09, 1.37708e-15, -1.64011e-07, 0.368735, -0.537276, 1.0956, 1.04904e-05 )
 mesh = SubResource( 7 )
-material/0 = ExtResource( 3 )
+material/0 = SubResource( 11 )
 
 [node name="GreenLed" type="MeshInstance" parent="door-right/Plate1"]
 transform = Transform( 0.222444, 6.40632e-08, 2.84456e-15, -4.49131e-09, 0.555355, 5.91337e-09, 1.37708e-15, -1.64011e-07, 0.368736, 0.515829, 1.0956, 1.04904e-05 )
 mesh = SubResource( 7 )
-material/0 = ExtResource( 4 )
+material/0 = SubResource( 12 )
 
 [node name="Area1" type="Area" parent="door-right/Plate1"]
-transform = Transform( 1.05625e-06, -14.8129, -1.82282e-13, -2.41642, -6.47491e-08, 4.17012e-07, -1.713e-06, -2.56728e-20, -12.966, -0.662706, -11.2854, -0.020092 )
+transform = Transform( 1.05625e-06, -14.8129, -1.82282e-13, -2.41642, -6.47491e-08, 4.17012e-07, -1.713e-06, -4.3532e-20, -12.966, -0.662706, -10.8135, 2.1525 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door-right/Plate1/Area1"]
 transform = Transform( 1, -8.47033e-22, 0, -2.53471e-35, 1, 2.52435e-29, 0, -2.52435e-29, 1, 0.727016, 0, 0 )
@@ -77,15 +108,15 @@ material/0 = ExtResource( 2 )
 [node name="RedLed" type="MeshInstance" parent="door-right/Plate2"]
 transform = Transform( 0.222444, 6.40632e-08, 2.84456e-15, -4.49131e-09, 0.555355, 5.91336e-09, 1.37708e-15, -1.64011e-07, 0.368735, -0.537276, -1.02914, 1.04904e-05 )
 mesh = SubResource( 7 )
-material/0 = ExtResource( 3 )
+material/0 = SubResource( 13 )
 
 [node name="GreenLed" type="MeshInstance" parent="door-right/Plate2"]
 transform = Transform( 0.222444, 6.40632e-08, 2.84456e-15, -4.49131e-09, 0.555355, 5.91336e-09, 1.37708e-15, -1.64011e-07, 0.368736, 0.515829, -0.816742, 1.04904e-05 )
 mesh = SubResource( 7 )
-material/0 = ExtResource( 4 )
+material/0 = SubResource( 14 )
 
 [node name="Area2" type="Area" parent="door-right/Plate2"]
-transform = Transform( 1.57195e-07, -14.7614, -7.87586e-14, -2.53626, -4.55064e-07, 1.27074e-06, -1.97785e-07, -3.62615e-21, -12.966, -0.663962, 15.0312, -1.55433 )
+transform = Transform( 1.57194e-07, -14.7614, -7.87586e-14, -2.53626, -4.55064e-07, 1.27074e-06, -1.97785e-07, 1.67697e-21, -12.966, -0.663962, 15.0312, 0.469976 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door-right/Plate2/Area2"]
 transform = Transform( 1, -1.35525e-20, 3.38813e-20, -5.2883e-35, 0.999999, 3.63507e-27, 0, 2.52435e-29, 1, 0.109226, 0, -0.130616 )
@@ -101,5 +132,16 @@ material/0 = ExtResource( 5 )
 [node name="CollisionShape" type="CollisionShape" parent="Gate/StaticBody"]
 shape = SubResource( 9 )
 
+[node name="DoorSound" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.188354, 9.70726, 0 )
+stream = ExtResource( 7 )
+unit_db = 21.238
+max_db = 6.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.997
+one_shot = true
+
 [connection signal="body_entered" from="door-right/Plate1/Area1" to="." method="_button_pressed"]
 [connection signal="body_entered" from="door-right/Plate2/Area2" to="." method="_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

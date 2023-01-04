@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/411110__kernschall__thin-metal-sliding-door-open-sqeaking.wav-ae1b0e3938e6d13291ce03fa0284063c.sample"
+
+[deps]
+
+source_file="res://Tools/Sounds/411110__kernschall__thin-metal-sliding-door-open-sqeaking.wav"
+dest_files=[ "res://.import/411110__kernschall__thin-metal-sliding-door-open-sqeaking.wav-ae1b0e3938e6d13291ce03fa0284063c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
