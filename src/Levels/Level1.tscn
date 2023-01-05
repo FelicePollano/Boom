@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Models/CloningMachine/cloning.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Models/SodaVending/soda_machine.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Models/Locker/locker.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Models/Power-gen-t/power-gen-t.tscn" type="PackedScene" id=13]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -231,6 +232,27 @@ transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -43.602
 [node name="soda_machine3" parent="NavigationMeshInstance" instance=ExtResource( 11 )]
 transform = Transform( -2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -172.487, 7.27335, -96.6614 )
 
+[node name="locker" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -108.366, 3.5, 109.007 )
+
+[node name="locker2" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -114.137, 3.5, 118.328 )
+
+[node name="locker3" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -119.483, 3.5, 127.535 )
+
+[node name="locker4" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -124.829, 3.5, 136.743 )
+
+[node name="locker5" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -130.472, 3.5, 146.247 )
+
+[node name="power-gen-t" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, -162.173, 2.2, 119.843 )
+
+[node name="power-gen-t2" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, -162.173, 2.2, 87.782 )
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
@@ -258,18 +280,3 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 195.123
 
 [node name="Door7" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -150.686, 0, -110.289 )
-
-[node name="locker" parent="." instance=ExtResource( 12 )]
-transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -108.366, 3.5, 109.007 )
-
-[node name="locker2" parent="." instance=ExtResource( 12 )]
-transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -114.137, 3.5, 118.328 )
-
-[node name="locker3" parent="." instance=ExtResource( 12 )]
-transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -119.483, 3.5, 127.535 )
-
-[node name="locker4" parent="." instance=ExtResource( 12 )]
-transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -124.829, 3.5, 136.743 )
-
-[node name="locker5" parent="." instance=ExtResource( 12 )]
-transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -130.472, 3.5, 146.247 )

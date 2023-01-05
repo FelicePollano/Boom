@@ -21,6 +21,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
   - [Cloning Machine](https://skfb.ly/opAIz) by uenostation54 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Soda Vending Machine](https://skfb.ly/6RunD) by RasenDan is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Steel Locker](https://skfb.ly/o79tW) by 3d game artist lab is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+  - [Power Generator thing](https://skfb.ly/6WJM9) by tboiston is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 
 
 
