@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Tools/T-Tunnel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Tools/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Models/CloningMachine/cloning.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Models/soda_machine.tscn" type="PackedScene" id=11]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -247,3 +248,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -150.686, 0, -110.289 )
 
 [node name="cloning" parent="." instance=ExtResource( 10 )]
 transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 48.7782, 2.35656, -29.7768 )
+
+[node name="soda_machine" parent="." instance=ExtResource( 11 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 0, 7.27335, 78.3905 )
+
+[node name="soda_machine2" parent="." instance=ExtResource( 11 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -43.6027, 7.27335, -60.1121 )
+
+[node name="soda_machine3" parent="." instance=ExtResource( 11 )]
+transform = Transform( -2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -172.487, 7.27335, -96.6614 )
