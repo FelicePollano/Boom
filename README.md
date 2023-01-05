@@ -18,7 +18,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 - [ambientCG](https://ambientcg.com/) for material textures.
 - [FontSquirrel](https://www.fontsquirrel.com/) for font in user inerface.
 - [SketchFab](https://sketchfab.com/) for 3D models using to decorate levels
- - [Cloning Machine](https://skfb.ly/opAIz) by uenostation54 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+  - [Cloning Machine](https://skfb.ly/opAIz) by uenostation54 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 
 
 
