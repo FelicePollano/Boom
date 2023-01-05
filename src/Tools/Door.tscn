@@ -139,7 +139,7 @@ unit_db = 21.238
 max_db = 6.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.997
+wait_time = 30.0
 one_shot = true
 
 [connection signal="body_entered" from="door-right/Plate1/Area1" to="." method="_button_pressed"]
