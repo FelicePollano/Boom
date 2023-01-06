@@ -1,7 +1,7 @@
 extends KinematicBody
 
 
-onready var sprite = $AnimatedSprite3D
+onready var sprite : AnimatedSprite3D = $AnimatedSprite3D
 onready var player : KinematicBody = get_tree().get_nodes_in_group("Player")[0]
 onready var ray : RayCast = $RayCast
 onready var nav : NavigationAgent = $NavigationAgent
@@ -11,6 +11,7 @@ var speed = 5
 var health = 3
 var ray_len = 35
 var following = false
+var killing = false
 var rng = RandomNumberGenerator.new()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -39,8 +40,17 @@ func _physics_process(delta: float) -> void:
 		var direction = (next - transform.origin).normalized()
 		var vel = direction * speed * delta
 		move_and_collide(vel)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	var distance = (player.transform.origin - transform.origin).length_squared()
+	if distance < 100 and not killing:
+		sprite.play("Kill")
+		killing = true
+		yield(sprite,"animation_finished")
+		distance = (player.transform.origin - transform.origin).length_squared()
+		killing = false
+		if distance < 200 and health>0:
+			player.damage(5)
+			sprite.play("walk")
+		# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
 	var dir = (player.transform.origin-transform.origin).normalized()*ray_len
