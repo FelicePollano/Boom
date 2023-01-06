@@ -8,8 +8,8 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 ![screen2](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-28-40.png)
 ![screen3](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-29-20.png)
 ![screen4](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-02%2010-24-45.png)
-![screen4](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-02%2010-31-47.png)
-
+![screen6](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-20-18.png)
+![screen7](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-23-16.png)
 
 ## Credits
 - [Realm667](https://www.realm667.com/en/) For monsters and AK47 animations.
