@@ -255,6 +255,12 @@ transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, 141.38
 [node name="locker7" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
 transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, 141.389, 3.5, -2.01228 )
 
+[node name="locker10" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, -28.7079, 3.5, -92.0838 )
+
+[node name="locker11" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, -28.7079, 3.5, -102.994 )
+
 [node name="locker8" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
 transform = Transform( -1.39876e-06, 0, 32, 0, 32, 0, -32, 0, -1.39876e-06, 145.537, 3.5, -4.8503 )
 
@@ -312,14 +318,119 @@ transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -192.285, 2.8, 87.958
 [node name="container2" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
 transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -198.056, 2.8, 96.935 )
 
+[node name="container14" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 8.41518, 2.8, -8.86555 )
+
+[node name="container15" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 10.3388, 2.8, -1.17096 )
+
 [node name="container3" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
 transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -203.186, 2.8, 106.553 )
+
+[node name="container13" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -6.97404, 2.8, 2.67633 )
 
 [node name="container4" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
 transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -190.362, 2.8, 106.553 )
 
+[node name="container6" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -189.079, 2.8, 98.8587 )
+
+[node name="container12" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 2.64423, 2.8, 2.03514 )
+
+[node name="container18" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 2.64423, 2.8, -73.6283 )
+
+[node name="container23" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -123.897, 2.8, -131.176 )
+
+[node name="container24" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -116.275, 2.8, -131.176 )
+
+[node name="container25" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -108.308, 2.8, -131.176 )
+
+[node name="container26" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -101.725, 2.8, -131.176 )
+
+[node name="container27" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -94.4505, 2.8, -131.176 )
+
+[node name="container28" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -87.1755, 2.8, -131.176 )
+
+[node name="container29" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -80.5934, 2.8, -131.176 )
+
+[node name="container35" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -80.5934, 2.8, -83.6552 )
+
+[node name="container36" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -88.0185, 2.8, -83.6552 )
+
+[node name="container37" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -94.5527, 2.8, -83.6552 )
+
+[node name="container38" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -100.79, 2.8, -83.6552 )
+
+[node name="container39" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -107.027, 2.8, -83.6552 )
+
+[node name="container40" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -113.561, 2.8, -83.6552 )
+
+[node name="container19" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 9.6976, 2.8, -73.6283 )
+
+[node name="container20" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 14.8273, 2.8, -73.6283 )
+
+[node name="container21" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 20.5983, 2.8, -73.6283 )
+
+[node name="container7" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0167758, 0, 0.0248711, 0, 0.03, 0, -0.0248711, 0, 0.0167758, -180.743, 2.8, 87.3168 )
+
+[node name="container8" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0167758, 0, 0.0248711, 0, 0.03, 0, -0.0248711, 0, 0.0167758, -205.751, 2.8, 86.0344 )
+
+[node name="container10" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0167758, 0, 0.0248711, 0, 0.03, 0, -0.0248711, 0, 0.0167758, -192.285, 2.8, 75.1337 )
+
+[node name="container11" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0167758, 0, 0.0248711, 0, 0.03, 0, -0.0248711, 0, 0.0167758, -8.89769, 2.8, -6.30065 )
+
+[node name="container17" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0167758, 0, 0.0248711, 0, 0.03, 0, -0.0248711, 0, 0.0167758, -8.25645, 2.8, -16.5601 )
+
 [node name="container5" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
 transform = Transform( 0.0259808, 0, 0.015, 0, 0.03, 0, -0.015, 0, 0.0259808, -197.415, 9.4, 102.065 )
+
+[node name="container30" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -123.892, 9.4, -130.907 )
+
+[node name="container31" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -111.714, 9.4, -130.907 )
+
+[node name="container32" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -101.616, 9.4, -130.907 )
+
+[node name="container33" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -91.2208, 9.4, -130.907 )
+
+[node name="container34" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -81.4196, 9.4, -130.907 )
+
+[node name="container22" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0259808, 0, 0.015, 0, 0.03, 0, -0.015, 0, 0.0259808, 5.8504, 9.4, -72.9869 )
+
+[node name="container16" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0259808, 0, 0.015, 0, 0.03, 0, -0.015, 0, 0.0259808, -3.12666, 9.4, 2.67659 )
+
+[node name="container9" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0259808, 0, 0.015, 0, 0.03, 0, -0.015, 0, 0.0259808, -191.644, 9.4, 87.9583 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
