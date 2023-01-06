@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Models/SodaVending/soda_machine.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Models/Locker/locker.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Models/Power-gen-t/power-gen-t.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Models/Console/mission_control_console.glb" type="PackedScene" id=14]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -196,6 +197,9 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 215.449
 [node name="SciFiWall14" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 215.448, 0, 31.8777 )
 
+[node name="SciFiWall20" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 132.09, 0, 44.702 )
+
 [node name="SciFiWall15" parent="NavigationMeshInstance" instance=ExtResource( 7 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 196.853, 0, 108.182 )
 
@@ -221,7 +225,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84.6599, 1.52588e-05, 111.227 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 144.988, 1.52588e-05, 111.227 )
 
 [node name="cloning" parent="NavigationMeshInstance" instance=ExtResource( 10 )]
-transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 48.7782, 2.35656, -29.7768 )
+transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 115.465, 2.35656, 8.05493 )
+
+[node name="cloning2" parent="NavigationMeshInstance" instance=ExtResource( 10 )]
+transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 184.157, 2.35656, 8.05493 )
+
+[node name="cloning3" parent="NavigationMeshInstance" instance=ExtResource( 10 )]
+transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, -139.639, 2.35656, 93.2645 )
 
 [node name="soda_machine" parent="NavigationMeshInstance" instance=ExtResource( 11 )]
 transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 0, 7.27335, 78.3905 )
@@ -238,6 +248,18 @@ transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -108.366, 3.
 [node name="locker2" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
 transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -114.137, 3.5, 118.328 )
 
+[node name="locker6" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, 141.389, 3.5, 8.68486 )
+
+[node name="locker7" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( 3.81596e-07, 0, -32, 0, 32, 0, 32, 0, 3.81596e-07, 141.389, 3.5, -2.01228 )
+
+[node name="locker8" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -1.39876e-06, 0, 32, 0, 32, 0, -32, 0, -1.39876e-06, 145.537, 3.5, -4.8503 )
+
+[node name="locker9" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
+transform = Transform( -1.39876e-06, 0, 32, 0, 32, 0, -32, 0, -1.39876e-06, 145.537, 3.5, 6.06515 )
+
 [node name="locker3" parent="NavigationMeshInstance" instance=ExtResource( 12 )]
 transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -119.483, 3.5, 127.535 )
 
@@ -250,8 +272,38 @@ transform = Transform( -16, 0, -27.7128, 0, 32, 0, 27.7128, 0, -16, -130.472, 3.
 [node name="power-gen-t" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
 transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, -162.173, 2.2, 119.843 )
 
+[node name="power-gen-t5" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, 156.511, 2.2, 57.6451 )
+
+[node name="power-gen-t6" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, 156.511, 2.2, 20.4546 )
+
+[node name="power-gen-t3" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -0.09, 0, -7.86805e-09, 0, 0.09, 0, 7.86805e-09, 0, -0.09, 87.9593, 2.2, -20.95 )
+
+[node name="power-gen-t4" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
+transform = Transform( -0.09, 0, -7.86805e-09, 0, 0.09, 0, 7.86805e-09, 0, -0.09, 123.143, 2.2, -20.95 )
+
 [node name="power-gen-t2" parent="NavigationMeshInstance" instance=ExtResource( 13 )]
 transform = Transform( -3.93403e-09, 0, -0.09, 0, 0.09, 0, 0.09, 0, -3.93403e-09, -162.173, 2.2, 87.782 )
+
+[node name="mission_control_console" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 86.859, 3.8, 52.225 )
+
+[node name="mission_control_console3" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( -2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 215.759, 3.8, 32.021 )
+
+[node name="mission_control_console4" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( -2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 215.759, 3.8, 13.03 )
+
+[node name="mission_control_console2" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 112.517, 3.8, 52.225 )
+
+[node name="mission_control_console5" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -138.164, 3.8, 57.173 )
+
+[node name="mission_control_console6" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
+transform = Transform( -2.5, 0, 4.33013, 0, 5, 0, -4.33013, 0, -2.5, -115.075, 3.8, 65.968 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
