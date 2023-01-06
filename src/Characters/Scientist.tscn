@@ -1,0 +1,77 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Characters/Scientist-textures/7dcc0578-d0b1-4143-83d7-25b894072284.png" type="Texture" id=1]
+[ext_resource path="res://Characters/Scientist.gd" type="Script" id=2]
+[ext_resource path="res://Characters/Scientist-textures/f33ae5b5-6358-4de0-b282-bcad0db167c7.png" type="Texture" id=3]
+[ext_resource path="res://Characters/Scientist-textures/a062999c-a692-4620-8f70-e0236bf13d85.png" type="Texture" id=4]
+[ext_resource path="res://Characters/Scientist-textures/afff780a-8a6a-4223-9434-442ab036e94c.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Scientist-textures/ff9fc77d-5012-4ebb-8481-c38b63ca22ec.png" type="Texture" id=6]
+[ext_resource path="res://Characters/Scientist-textures/6a9cd7ec-3f9f-47f6-8946-fa8ed16880c2.png" type="Texture" id=7]
+[ext_resource path="res://Characters/Scientist-textures/8b936d2d-b4c0-42dc-8aa3-6acc04331ba5.png" type="Texture" id=8]
+[ext_resource path="res://Characters/Scientist-textures/c8571ae9-5fbb-4d48-9311-ffc52b9d857e.png" type="Texture" id=9]
+[ext_resource path="res://Characters/Scientist-textures/fba41f2b-4b11-45ad-a94a-63659218f18f.png" type="Texture" id=10]
+[ext_resource path="res://Characters/Scientist-textures/dbe3d723-a30a-4f02-a40b-48b99527deae.png" type="Texture" id=11]
+[ext_resource path="res://Characters/Scientist-textures/f304d148-f519-4e94-ba48-ffed1274945c.png" type="Texture" id=12]
+[ext_resource path="res://Characters/Scientist-textures/f8615cad-e380-444e-a789-425b83425178.png" type="Texture" id=13]
+[ext_resource path="res://Characters/Scientist-textures/5f4da45b-3a29-476e-9160-aca79c01061f.png" type="Texture" id=14]
+[ext_resource path="res://Characters/Scientist-textures/3c674289-6cec-4a49-95d4-f4e864e48100.png" type="Texture" id=15]
+[ext_resource path="res://Characters/Sounds/515187__therobotrob__gotcha.wav" type="AudioStream" id=16]
+[ext_resource path="res://Characters/Sounds/454830__misterkidx__zombie-die-1.wav" type="AudioStream" id=17]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 1.01904
+height = 2.3587
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "Kill",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "die",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[node name="Scientist" type="KinematicBody" groups=["Enemy"]]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.33789, 3.22695, -0.891829 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 8, 0, 0, 0, 9, 0, 0, 0, 8, -2.31554, 2.03345, 0.766069 )
+centered = false
+offset = Vector2( -5, -15 )
+billboard = 1
+frames = SubResource( 2 )
+animation = "idle"
+playing = true
+
+[node name="RayCast" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.805946, 4.87242, -0.286844 )
+enabled = true
+cast_to = Vector3( 0, 0, -100 )
+debug_shape_custom_color = Color( 0.65098, 0.0901961, 0.0901961, 1 )
+
+[node name="NavigationAgent" type="NavigationAgent" parent="."]
+agent_height_offset = 4.0
+
+[node name="Scream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+
+[node name="Gotcha" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )

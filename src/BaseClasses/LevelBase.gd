@@ -3,6 +3,7 @@ extends Spatial
 class_name LevelBase
 var player = preload("res://Characters/Player.tscn")
 var skeleton = preload("res://Characters/Skeleton.tscn")
+var scientist = preload("res://Characters/Scientist.tscn")
 var player_instance
 
 func _ready() -> void:
@@ -22,6 +23,8 @@ func spawn_enemy(name:String)->KinematicBody:
 	match name:
 		"Skeleton":
 			return skeleton.instance()
+		"Scientist":
+			return scientist.instance()
 	return null
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
