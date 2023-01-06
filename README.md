@@ -23,6 +23,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
   - [Steel Locker](https://skfb.ly/o79tW) by 3d game artist lab is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Power Generator thing](https://skfb.ly/6WJM9) by tboiston is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Mission Control Console](https://skfb.ly/oynoJ) by TheoClarke is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+  - [Container](https://skfb.ly/FZOL) by Willy Decarpentrie is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 
 
 

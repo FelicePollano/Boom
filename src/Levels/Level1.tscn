@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level1.gd" type="Script" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Models/Locker/locker.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Models/Power-gen-t/power-gen-t.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Models/Console/mission_control_console.glb" type="PackedScene" id=14]
+[ext_resource path="res://Models/Container/container.tscn" type="PackedScene" id=15]
 
 [sub_resource type="PanoramaSky" id=12]
 panorama = ExtResource( 1 )
@@ -304,6 +305,21 @@ transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -138.16
 
 [node name="mission_control_console6" parent="NavigationMeshInstance" instance=ExtResource( 14 )]
 transform = Transform( -2.5, 0, 4.33013, 0, 5, 0, -4.33013, 0, -2.5, -115.075, 3.8, 65.968 )
+
+[node name="container" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -192.285, 2.8, 87.958 )
+
+[node name="container2" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -198.056, 2.8, 96.935 )
+
+[node name="container3" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -203.186, 2.8, 106.553 )
+
+[node name="container4" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -190.362, 2.8, 106.553 )
+
+[node name="container5" parent="NavigationMeshInstance" instance=ExtResource( 15 )]
+transform = Transform( 0.0259808, 0, 0.015, 0, 0.03, 0, -0.015, 0, 0.0259808, -197.415, 9.4, 102.065 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
