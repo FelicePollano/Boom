@@ -7,7 +7,7 @@ onready var ray : RayCast = $RayCast
 onready var nav : NavigationAgent = $NavigationAgent
 onready var scream : AudioStreamPlayer = $Scream
 onready var gotcha : AudioStreamPlayer = $Gotcha
-var speed = 5
+var speed = 6
 var health = 3
 var ray_len = 35
 var following = false
@@ -50,6 +50,9 @@ func _physics_process(delta: float) -> void:
 		if distance < 200 and health>0:
 			player.damage(5)
 			sprite.play("walk")
+	if distance > 200 and health >0 and killing:
+		killing = false
+		sprite.play("walk")
 		# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	

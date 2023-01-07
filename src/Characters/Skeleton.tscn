@@ -52,6 +52,7 @@ offset = Vector2( -28, -50 )
 billboard = 1
 frames = SubResource( 2 )
 animation = "walk"
+frame = 1
 playing = true
 
 [node name="RayCast" type="RayCast" parent="."]
