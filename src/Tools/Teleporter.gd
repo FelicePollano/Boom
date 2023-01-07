@@ -14,5 +14,5 @@ func _process(delta: float) -> void:
 		player.set_process(false)
 		if not $AudioStreamPlayer.playing:
 			$AudioStreamPlayer.play()
-		yield($AudioStreamPlayer,"finished")
 		get_tree().change_scene(dest_scene)
+		

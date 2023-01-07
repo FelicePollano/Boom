@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Weapons/BloodHit.gd" type="Script" id=1]
+
+[sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 0.29
+emission_shape = 1
+emission_sphere_radius = 0.1
+direction = Vector3( 0, 0, 0 )
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1.0
+initial_velocity_random = 0.14
+linear_accel = 18.18
+damping = 44.71
+damping_random = 0.73
+angle = 87.3
+color = Color( 0.54902, 0.113725, 0.113725, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.921569, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 3 )
+radius = 0.05
+height = 0.1
+
+[node name="Particles" type="Particles"]
+transform = Transform( 0.448963, 0, 0, 0, 0.918938, 0, 0, 0, 0.268825, 0, 0, 0 )
+emitting = false
+amount = 1000
+lifetime = 0.41
+one_shot = true
+explosiveness = 1.0
+randomness = 0.76
+visibility_aabb = AABB( -0.577357, -0.289917, -2.4315, 0.944753, 0.391358, 4.863 )
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 2 )
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

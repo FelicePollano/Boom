@@ -2,8 +2,9 @@ extends KinematicBody
 
 var ak47 = preload("res://Weapons/Ak47/Ak47.tscn")
 var flash = preload("res://Weapons/Flash.tscn")
+var blood = preload("res://Weapons/BloodHit.tscn")
 onready var ouch : AudioStreamPlayer = $Ouch
-onready var raycast =$RayCast
+onready var raycast : RayCast =$RayCast
 onready var health_label : Label = $CanvasLayer/Control/ColorRect/Label2
 # Declare member variables here. Examples:
 # var a: int = 2
@@ -39,6 +40,11 @@ func on_fire()->void:
 		var hit = raycast.get_collider()
 		if hit.is_in_group("Enemy"):
 			hit.damage(1)
+			var pt = raycast.get_collision_point()
+			var b = blood.instance()
+			b.transform.origin=pt;
+			b.emitting=true
+			get_parent().add_child(b)	
 	
 func damage(amount)->void:
 	health-=amount

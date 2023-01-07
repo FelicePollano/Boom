@@ -30,7 +30,7 @@ visible = false
 omni_range = 25.309
 
 [node name="RayCast" type="RayCast" parent="."]
-transform = Transform( 0.994468, 0, -0.104535, 0, 0.999999, 0, 0.104523, 0, 0.99458, 0.151, 2.1, -1.07 )
+transform = Transform( 0.994468, 0, -0.104535, 0, 0.999999, 0, 0.104523, 0, 0.99458, 0.151, 3.20906, -1.07 )
 enabled = true
 cast_to = Vector3( -200, 0, 0 )
 debug_shape_custom_color = Color( 0.0392157, 0.235294, 0.654902, 1 )

@@ -7,6 +7,7 @@ var teleporter_spawned = false
 onready var teleporter_position:Position3D = $TeleporterPosition
 
 
+
 func _on_Timer_timeout() -> void:
 	if how_many > 0:
 		how_many-=1
