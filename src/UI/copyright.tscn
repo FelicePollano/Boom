@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Fonts/Diner-Fatt.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/8bitOperatorPlus8-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/copyright.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
