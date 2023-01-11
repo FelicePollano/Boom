@@ -24,6 +24,11 @@ config/name="Boom"
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/fullscreen=true
+window/stretch/mode="viewport"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
