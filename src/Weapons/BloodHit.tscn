@@ -1,6 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Weapons/BloodHit.gd" type="Script" id=1]
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0.0277778, 0.172727 ), 0.0, 0.0, 0, 0, Vector2( 0.518519, 0.268182 ), 0.526829, 0.526829, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
 
 [sub_resource type="ParticlesMaterial" id=1]
 lifetime_randomness = 0.29
@@ -15,9 +21,15 @@ linear_accel = 18.18
 damping = 44.71
 damping_random = 0.73
 angle = 87.3
+scale_random = 0.21
+scale_curve = SubResource( 5 )
 color = Color( 0.54902, 0.113725, 0.113725, 1 )
 
 [sub_resource type="SpatialMaterial" id=3]
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
 albedo_color = Color( 0.921569, 0.0784314, 0.0784314, 1 )
 
 [sub_resource type="SphereMesh" id=2]
