@@ -29,7 +29,11 @@ func spawn_enemy(name:String)->KinematicBody:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_just_pressed("ui_cancel"):
+		#on cancel (ESC) quit game
+		#later this will be changed to take you to title screen
+		get_tree().quit()
+		
 func spawn_player()->void:
 	player_instance = player.instance()
 	player_instance.transform.origin = $PlayerPosition.transform.origin
