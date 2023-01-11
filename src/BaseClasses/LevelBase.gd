@@ -7,6 +7,7 @@ var scientist = preload("res://Characters/Scientist.tscn")
 var player_instance
 
 func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	spawn_player() # Replace with function body.
 	spawn_enemies()
 			
