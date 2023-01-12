@@ -24,6 +24,6 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
   - [Power Generator thing](https://skfb.ly/6WJM9) by tboiston is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Mission Control Console](https://skfb.ly/oynoJ) by TheoClarke is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Container](https://skfb.ly/FZOL) by Willy Decarpentrie is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
-
+  - [8-BIT OPERATOR Font] by Grand Chaos Productions is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 
 
 

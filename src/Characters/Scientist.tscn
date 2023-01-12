@@ -53,7 +53,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.3378
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform( 8, 0, 0, 0, 9, 0, 0, 0, 8, -2.31554, 2.03345, 0.766069 )
+transform = Transform( 11, 0, 0, 0, 11, 0, 0, 0, 11, -2.31554, 2.74862, 0.766069 )
 centered = false
 offset = Vector2( -5, -15 )
 billboard = 1
