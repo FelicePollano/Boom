@@ -2,30 +2,28 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.s3tc.stex"
-path.etc2="res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.etc2.stex"
+path="res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Characters/Scientist-textures/fba41f2b-4b11-45ad-a94a-63659218f18f.png"
-dest_files=[ "res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.s3tc.stex", "res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.etc2.stex" ]
+dest_files=[ "res://.import/fba41f2b-4b11-45ad-a94a-63659218f18f.png-45a891674f86340bef46cc4cef13ae6d.stex" ]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=true
-flags/filter=true
-flags/mipmaps=true
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

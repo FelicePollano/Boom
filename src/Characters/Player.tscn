@@ -14,7 +14,7 @@ transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 29.3607
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 4.0827, 0, 0, 0, -1.63297e-07, -2.31563, 0, 3.28115, -8.89011e-08, 0, 2.19012, 0 )
+transform = Transform( 5.5, 0, 0, 0, -1.43417e-07, -2.316, 0, 3.281, -1.01236e-07, 0, 2.19012, 0 )
 shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
