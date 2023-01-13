@@ -69,5 +69,14 @@ func die()->void:
 	$CollisionShape.disabled=true
 	set_physics_process(false)
 	set_process(false)
-	transform.origin.y-=5
 	$Die.play()
+	# Animate falling down
+	$Tween.interpolate_property(
+		self,
+		"translation:y",
+		translation.y,
+		translation.y - 5,
+		1.0,
+		Tween.TRANS_LINEAR
+	)
+	$Tween.start()

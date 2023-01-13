@@ -14,6 +14,8 @@ height = 1.76548
 transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 29.3607, -2.33912 )
 script = ExtResource( 2 )
 
+[node name="Tween" type="Tween" parent="."]
+
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 5.5, 0, 0, 0, -1.43417e-07, -2.316, 0, 3.281, -1.01236e-07, 0, 2.19012, 0 )
 shape = SubResource( 1 )
@@ -77,3 +79,9 @@ margin_right = 114.0
 margin_bottom = 31.0
 theme = ExtResource( 4 )
 text = "100"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="die"]
