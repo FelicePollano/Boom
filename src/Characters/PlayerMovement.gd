@@ -9,15 +9,17 @@ onready var health_label : Label = $CanvasLayer/Control/ColorRect/Label2
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
-var speed = 20
-var ang_speed =1.2
+export(int) var speed = 20
+export(float) var ang_speed = 1.2
 var health=100
+
+var current_weapon
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var weapon = ak47.instance()
-	add_child(weapon)
-	weapon.connect("fire",self,"on_fire")
+	current_weapon = ak47.instance()
+	add_child(current_weapon)
+	current_weapon.connect("fire",self,"on_fire")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -58,9 +60,23 @@ func damage(amount)->void:
 	add_child(f)
 	ouch.play()
 	if health<=0:
-		$CollisionShape.disabled=true
-		set_physics_process(false)
-		set_process(false)
-		transform.origin.y-=5
-		$Die.play()
+		die()
 	pass
+
+func die()->void:
+	$Camera.disabled = true
+	current_weapon.visible = false
+	$CollisionShape.disabled=true
+	set_physics_process(false)
+	set_process(false)
+	$Die.play()
+	# Animate falling down
+	$Tween.interpolate_property(
+		self,
+		"translation:y",
+		translation.y,
+		translation.y - 5,
+		1.0,
+		Tween.TRANS_LINEAR
+	)
+	$Tween.start()

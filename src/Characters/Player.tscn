@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Characters/Sounds/163441__under7dude__man-getting-hit.wav" type="AudioStream" id=1]
 [ext_resource path="res://Characters/PlayerMovement.gd" type="Script" id=2]
 [ext_resource path="res://Characters/Sounds/98399__the-baron__argh.wav" type="AudioStream" id=3]
 [ext_resource path="res://Characters/UITheme.tres" type="Theme" id=4]
+[ext_resource path="res://Characters/CameraBob.gd" type="Script" id=5]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.415443
@@ -12,6 +13,10 @@ height = 1.76548
 [node name="Player" type="KinematicBody" groups=["Player"]]
 transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 29.3607, -2.33912 )
 script = ExtResource( 2 )
+speed = 25
+ang_speed = 1.5
+
+[node name="Tween" type="Tween" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 5.5, 0, 0, 0, -1.43417e-07, -2.316, 0, 3.281, -1.01236e-07, 0, 2.19012, 0 )
@@ -23,6 +28,9 @@ current = true
 fov = 54.5
 near = 0.78
 far = 493.5
+script = ExtResource( 5 )
+speed = 12.0
+intensity = 0.3
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1.05035, 0, 0, 0, 0.525173, 0, 0, 0, 1, -1.2171, 2.04173, -1.78711 )
