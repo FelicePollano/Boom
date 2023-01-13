@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Weapons/Ak47/60104c47-aeb0-45d9-953d-ee7912bb9886.png" type="Texture" id=1]
 [ext_resource path="res://Weapons/Ak47/a4ee92f8-a56a-40b6-9e49-15f2a19a8ae6.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Weapons/Ak47/3ebc1425-4661-4aff-b920-2d4da2a1f075.png" type="Texture" id=4]
 [ext_resource path="res://Weapons/Ak47/Ak47.gd" type="Script" id=5]
 [ext_resource path="res://Weapons/Ak47/163455__lemudcrab__shotgun-shot.wav" type="AudioStream" id=6]
+[ext_resource path="res://Weapons/Ak47/WeaponBob.gd" type="Script" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -25,6 +26,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 script = ExtResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 7 )
+speed = 9.0
+intensity_y = 30.0
+intensity_x = 100.0
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 anchor_left = 0.5
