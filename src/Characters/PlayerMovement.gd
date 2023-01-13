@@ -9,8 +9,8 @@ onready var health_label : Label = $CanvasLayer/Control/ColorRect/Label2
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
-var speed = 20
-var ang_speed =1.2
+export(int) var speed = 20
+export(float) var ang_speed = 1.2
 var health=100
 
 var current_weapon

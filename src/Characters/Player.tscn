@@ -13,6 +13,8 @@ height = 1.76548
 [node name="Player" type="KinematicBody" groups=["Player"]]
 transform = Transform( 0.952067, 0, 0, 0, 1.90413, 0, 0, 0, 1, -1.09055, 29.3607, -2.33912 )
 script = ExtResource( 2 )
+speed = 25
+ang_speed = 1.5
 
 [node name="Tween" type="Tween" parent="."]
 
