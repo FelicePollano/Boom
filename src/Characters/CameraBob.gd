@@ -2,7 +2,7 @@ extends Camera
 
 export(bool) var disabled = false
 export(float) var speed = 0.1 # Arbitrary number
-export(float, 0, 1) var intensity = 1 # In 3D-space units
+export(float, 0, 1) var intensity = .2 # In 3D-space units
 
 var initial_translation : Vector3
 var sine_function = 0
