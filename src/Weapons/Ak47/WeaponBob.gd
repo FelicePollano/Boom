@@ -15,6 +15,7 @@ func _ready():
 	initial_offset = offset
 
 func _process(delta):
+	self.visible = get_parent().visible
 	if (Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_S)) and disabled == false:
 		x += Vector2(speed/2 * delta, speed * delta)
 		sine_function = Vector2(sin(x.x), sin(x.y))
