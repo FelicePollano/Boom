@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Textures/DiamondPlate006C_1K_Color.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level0.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Tools/Pillar.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=10]
 [ext_resource path="res://Music/boom.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Models/Torch/wall_torch.tscn" type="PackedScene" id=12]
 
 [sub_resource type="PhysicsMaterial" id=8]
 rough = true
@@ -215,5 +216,8 @@ autostart = true
 
 [node name="TeleporterPosition" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4343, 0, -38.535 )
+
+[node name="wall_torch" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.0116, 6.24023, 21.0086 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
