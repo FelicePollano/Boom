@@ -2,6 +2,11 @@
 Old fashion FPS game written with Godot engine.
 Very simple exercise, but kind of playable. It features NavigationMeshInstance and Navigation agent.
 
+## Contents
+* [Video and Screenshots](https://github.com/FelicePollano/Boom#video-and-screenshots)
+* [Credits](https://github.com/FelicePollano/Boom#credits)
+
+
 ## Video and screenshots
 [Here a short video](https://www.facebook.com/1412192133/videos/926298468278232/)
 ![screen1](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202022-12-30%2017-27-11.png)
@@ -24,6 +29,6 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
   - [Power Generator thing](https://skfb.ly/6WJM9) by tboiston is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Mission Control Console](https://skfb.ly/oynoJ) by TheoClarke is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - [Container](https://skfb.ly/FZOL) by Willy Decarpentrie is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
-  - [8-BIT OPERATOR Font] by Grand Chaos Productions is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 
+- [8-BIT OPERATOR Font](https://blogfonts.com/8-bit-operator.font) by Grand Chaos Productions is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 
 
 
