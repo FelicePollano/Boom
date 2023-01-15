@@ -18,7 +18,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 
 ## Note for developers
 After lightmap introduction, some levels can complain about a missing dependency. This is due to the reasonable limitation Github imposes to file sizes. Just ignore this, and re-bake locally for the interested levels the Lightmaps, see screenshot below:
-![how-to-bake] https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-15%2011-10-53.png?raw=true
+![how-to-bake](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-15%2011-10-53.png?raw=true)
 
 For non godot developers, [godot 3.5.1](https://downloads.tuxfamily.org/godotengine/3.5.1/Godot_v3.5.1-stable_win64.exe.zip) is needed, It could possibly work with other 3.x.x versions.
 
