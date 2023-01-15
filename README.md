@@ -5,7 +5,7 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 ## Contents
 * [Video and Screenshots](https://github.com/FelicePollano/Boom#video-and-screenshots)
 * [Credits](https://github.com/FelicePollano/Boom#credits)
-
+* [Note for developers](https://github.com/FelicePollano/Boom#note-for-developers)
 
 ## Video and screenshots
 [Here a short video](https://www.facebook.com/1412192133/videos/926298468278232/)
@@ -15,6 +15,14 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 ![screen4](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-02%2010-24-45.png)
 ![screen6](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-20-18.png)
 ![screen7](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-23-16.png)
+
+## Note for developers
+After lightmap introduction, some levels can complain about a missing dependency. This is due to the reasonable limitation Github imposes to file sizes. Just ignore this, and re-bake locally for the interested levels the Lightmaps, see screenshot below:
+![how-to-bake] https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-15%2011-10-53.png?raw=true
+
+For non godot developers, [godot 3.5.1](https://downloads.tuxfamily.org/godotengine/3.5.1/Godot_v3.5.1-stable_win64.exe.zip) is needed, It could possibly work with other 3.x.x versions.
+
+
 
 ## Credits
 - [Realm667](https://www.realm667.com/en/) For monsters and AK47 animations.
