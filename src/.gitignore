@@ -1,0 +1,6 @@
+.DS_Store
+*~
+.import/
+logs/
+Levels/*.exr
+Levels/*.lmbake

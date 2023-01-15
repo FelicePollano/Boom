@@ -542,10 +542,11 @@ transform = Transform( 1.18623, 0, 0, 0, 1.26266, -0.307019, 0, 0.338328, 1.1458
 mesh = SubResource( 24 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0346324, 8.61204, -1.2783 )
-light_color = Color( 0.956863, 0.647059, 0.0588235, 1 )
-light_energy = 9.216
-omni_range = 30.2
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0600068, 8.61204, -3.04096 )
+light_color = Color( 0.92549, 0.756863, 0.415686, 1 )
+light_energy = 6.837
+shadow_enabled = true
+omni_range = 21.442
 
 [node name="Particles" type="Particles" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0192404, 9.18724, -1.58379 )
