@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Textures/DiamondPlate006C_1K_Color.jpg" type="Texture" id=1]
 [ext_resource path="res://Levels/Level0.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Textures/_0007_AllSkyFree_Screen_03.jpg" type="Texture" id=10]
 [ext_resource path="res://Music/boom.mp3" type="AudioStream" id=11]
 [ext_resource path="res://Models/Torch/wall_torch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Levels/Level0.lmbake" type="BakedLightmapData" id=13]
 
 [sub_resource type="PhysicsMaterial" id=8]
 rough = true
@@ -269,5 +270,6 @@ extents = Vector3( 99.7325, 23.9224, 90.2636 )
 use_denoiser = false
 default_texels_per_unit = 9.95
 environment_mode = 1
+light_data = ExtResource( 13 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
