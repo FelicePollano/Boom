@@ -15,6 +15,9 @@ Very simple exercise, but kind of playable. It features NavigationMeshInstance a
 ![screen4](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-02%2010-24-45.png)
 ![screen6](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-20-18.png)
 ![screen7](https://github.com/FelicePollano/Boom/blob/main/screenshots/Screenshot%20from%202023-01-06%2018-23-16.png)
+### Comparing with and without lightmaps effects
+![screen8](https://github.com/FelicePollano/Boom/blob/main/screenshots/lightmaps-noligtmaps.png?raw=true)
+
 
 ## Note for developers
 After lightmap introduction, some levels can complain about a missing dependency. This is due to the reasonable limitation Github imposes to file sizes. Just ignore this, and re-bake locally for the interested levels the Lightmaps, see screenshot below:
